@@ -1,0 +1,10 @@
+sudo su
+service mysql stop
+mkdir -p /var/run/mysqld
+chown mysql:mysql /var/run/mysqld
+sudo mysqld_safe --skip-grant-tables &
+mysql -u root
+gauchitogil89  # indicar pass
+// es importante que me fije como hacer los logs de SQL, como montarlo.
+// hhay n orden de cómo armar las instrucciones. 
+
